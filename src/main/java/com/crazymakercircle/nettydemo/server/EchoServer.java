@@ -25,22 +25,19 @@ public class EchoServer
 
     // 启动引导器
     private static ServerBootstrap b = new ServerBootstrap();
-
     @Autowired
     private EchoServerHandler echoServerHandler;
-
 
     public void run()
     {
         try
         {
-            // 设置监听端口
-            b.localAddress(new InetSocketAddress(port));
-
             b.group(boss, work);
             // 设置nio类型的channel
             b.channel(NioServerSocketChannel.class);
-            // 设置过滤器
+            // 设置监听端口
+            b.localAddress(new InetSocketAddress(port));
+            // 设置通道初始化
             b.childHandler(new ChannelInitializer<SocketChannel>()
             {
                 //有连接到达时会创建一个channel
