@@ -7,11 +7,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+
 //自动加载配置信息
+@Configuration
 @EnableAutoConfiguration
-//使包路径下带有注解的类可以使用@Autowired自动注入
-@ComponentScan("com.crazymakercircle.nettydemo")
+//使包路径下带有@Value的注解自动注入
+//使包路径下带有@Autowired的类可以自动注入
+@ComponentScan("com.crazymakercircle.nettydemo.server")
 @SpringBootApplication
 public class ServerApp {
 
@@ -19,7 +21,7 @@ public class ServerApp {
      * @param args
      */
     public static void main(String[] args) {
-        // 启动嵌入式的 Tomcat 并初始化 Spring 环境及其各 Spring 组件
+        // 启动并初始化 Spring 环境及其各 Spring 组件
         ApplicationContext context = SpringApplication.run(ServerApp.class, args);
         EchoServer nettyServer = context.getBean(EchoServer.class);
         nettyServer.run();

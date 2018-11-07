@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.net.InetSocketAddress;
+
 @Service("EchoServer")
 public class EchoServer
 {
@@ -32,6 +34,9 @@ public class EchoServer
     {
         try
         {
+            // 设置监听端口
+            b.localAddress(new InetSocketAddress(port));
+
             b.group(boss, work);
             // 设置nio类型的channel
             b.channel(NioServerSocketChannel.class);

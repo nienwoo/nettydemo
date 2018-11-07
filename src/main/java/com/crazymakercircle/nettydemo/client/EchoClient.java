@@ -21,7 +21,7 @@ public class EchoClient
     private String host ;
     // 服务器端口
     @Value("${server.port}")
-    private int port = 9876;
+    private int port;
 
     // 通过nio方式来接收连接和处理连接
     private EventLoopGroup group = new NioEventLoopGroup();
