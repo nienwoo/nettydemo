@@ -18,5 +18,42 @@
         <artifactId>miglayout-swing</artifactId>
         <version>5.1</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/javax.media/jmf -->
+    <dependency>
+        <groupId>javax.media</groupId>
+        <artifactId>jmf</artifactId>
+        <version>2.1.1e</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/net.protyposis.android.mediaplayer/mediaplayer -->
+    <dependency>
+        <groupId>net.protyposis.android.mediaplayer</groupId>
+        <artifactId>mediaplayer</artifactId>
+        <version>4.3.0</version>
+        <scope>runtime</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.miglayout/miglayout -->
+    <dependency>
+        <groupId>com.miglayout</groupId>
+        <artifactId>miglayout</artifactId>
+        <version>3.7.4</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.guppy4j/sound -->
+    <dependency>
+        <groupId>org.guppy4j</groupId>
+        <artifactId>sound</artifactId>
+        <version>0.0.6</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.github.freeseawind/NinePatch-Swing -->
+    <dependency>
+        <groupId>com.github.freeseawind</groupId>
+        <artifactId>NinePatch-Swing</artifactId>
+        <version>1.0</version>
+    </dependency>
+
+
+
+
 </dependencies>
 </project>

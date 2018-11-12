@@ -5,14 +5,11 @@ import java.io.InputStream;
 import java.net.Socket;
 import javax.sound.sampled.AudioFormat;
 
-import org.jsresources.apps.am.audio.AMAudioFormat;
-import org.jsresources.apps.am.audio.AudioCapture;
-import org.jsresources.apps.am.audio.AudioPlayStream;
+
 
 public class phone_Chat
 {
-    public AudioCapture phoneMIC;
-    public AudioPlayStream phoneSPK;
+
     public AudioFormat format;
     public Socket cc;
     public InputStream in;
@@ -29,11 +26,7 @@ public class phone_Chat
     public void iniAudioHardware() throws Exception
     {
 
-        phoneMIC = new AudioCapture(AMAudioFormat.FORMAT_CODE_GSM);//��ʼ��MIC
-        format = AMAudioFormat.getLineAudioFormat(AMAudioFormat.FORMAT_CODE_GSM);// ��ʼ��SPK
-        phoneSPK = new AudioPlayStream(format);
-        phoneMIC.open();
-        phoneSPK.open();
+
     }
 
     public void startPhone()
@@ -56,8 +49,7 @@ public class phone_Chat
     {
         try
         {
-            phoneMIC.close();
-            phoneSPK.close();
+
             cc.close();
             in.close();
             play.stop();
@@ -80,7 +72,7 @@ public class phone_Chat
         {
             try
             {
-                phoneSPK.start();
+
             } catch (Exception e1)
             {
                 e1.printStackTrace();
@@ -96,7 +88,7 @@ public class phone_Chat
                         complete = true;
                         break;
                     }
-                    phoneSPK.write(gsmdata, 0, numBytesRead);
+
                 } catch (IOException e)
                 {
                     System.exit(1);
