@@ -13,9 +13,7 @@ import com.client.business.resourceManager.ResourceManager;
 public class JClientAboutPanel extends JPanel
 {
 
-    /**
-     * @Fields serialVersionUID:TODO(��һ�仰�������������ʾʲô)
-     */
+
     private static final long serialVersionUID = 1L;
     String[] sfile = {}; // ���ļ��ж������ַ�������
     String[] s; // ��ʾ�ַ�������

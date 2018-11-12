@@ -25,7 +25,7 @@ public class User
 
 
 
-    public void setPlatform(int platform)
+    public void setIntPlatform(int platform)
     {
         PLATTYPE[] values=   PLATTYPE.values();
         for (int i = 0; i < values.length; i++)
@@ -56,7 +56,7 @@ public class User
         user.uid = new String(info.getUid());
         user.devId = new String(info.getDeviceId());
         user.token = new String(info.getToken());
-        user.setPlatform(info.getPlatform());
+        user.setIntPlatform(info.getPlatform());
         LOGGER.info("登录中: {}", user.toString());
         return user;
 
