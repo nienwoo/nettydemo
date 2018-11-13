@@ -22,7 +22,7 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: net.protyposis.android.mediaplayer:mediaplayer:4.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.miglayout:miglayout:3.7.4" level="project" />
     <orderEntry type="library" name="Maven: org.guppy4j:sound:0.0.6" level="project" />
-    <orderEntry type="library" name="Maven: com.github.freeseawind:NinePatch-Swing:1.0" level="project" />
+    <orderEntry type="module" module-name="onlyfeel" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.5.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.13.RELEASE" level="project" />

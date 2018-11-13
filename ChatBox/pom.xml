@@ -46,12 +46,11 @@
         <version>0.0.6</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/com.github.freeseawind/NinePatch-Swing -->
-    <dependency>
-        <groupId>com.github.freeseawind</groupId>
-        <artifactId>NinePatch-Swing</artifactId>
-        <version>1.0</version>
-    </dependency>
-
+        <dependency>
+            <groupId>com.only</groupId>
+            <artifactId>only-feel</artifactId>
+            <version>-0.3</version>
+        </dependency>
 
 
 

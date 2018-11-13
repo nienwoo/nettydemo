@@ -12,6 +12,7 @@
         <module>chatserver</module>
         <module>chatclient</module>
         <module>ChatBox</module>
+        <module>onlyfeel</module>
     </modules>
     <packaging>pom</packaging>
 
